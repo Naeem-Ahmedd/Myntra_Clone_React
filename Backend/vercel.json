@@ -24,6 +24,6 @@
     }
   ],
   "env": {
-    "CORS_ORIGIN": "https://myntra-clone-react-psi.vercel.app/"
+    "CORS_ORIGIN": "https://myntra-clone-react-psi.vercel.app"
   }
 }
