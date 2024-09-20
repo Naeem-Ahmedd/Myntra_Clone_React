@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/items",
+      "methods": ["GET", "POST"],
+      "dest": "app.js"
+    },
+    {
+      "src": "/items/(.*)",
+      "methods": ["GET"],
+      "dest": "app.js"
+    },
+    {
+      "src": "/",
+      "methods": ["GET"],
+      "dest": "app.js"
+    }
+  ],
+  "env": {
+    "CORS_ORIGIN": "https://myntra-clone-five-ebon.vercel.app"
+  }
+}
